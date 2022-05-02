@@ -1,0 +1,20 @@
+[package]
+name = "donation"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+authors = ["Tengiz Sharafiev <btolfa@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "donation"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = {version = "0.22.1", features = ["init-if-needed"] }
